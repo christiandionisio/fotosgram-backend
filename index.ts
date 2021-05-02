@@ -28,7 +28,7 @@ server.app.use('/user', userRoutes);
 server.app.use('/posts', postRoutes);
 
 // Conectar DB
-mongoose.connect('mongodb://localhost:27017/fotosgram', 
+mongoose.connect('mongodb+srv://mean_user:EWpWinEnfJ2nc32R@cluster0.hcqaq.mongodb.net/fotosgram?authSource=admin&replicaSet=atlas-m2z4np-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true', 
                 { useNewUrlParser: true, useCreateIndex: true }, (err) => {
                     if(err) throw err;
 
