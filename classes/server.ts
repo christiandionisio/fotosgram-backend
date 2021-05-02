@@ -11,7 +11,7 @@ export default class Server {
     }
 
     start(callback: any) {
-        this.app.listen(this.port, callback);
+        this.app.listen(process.env.PORT || this.port, callback);
     }
 
 }
