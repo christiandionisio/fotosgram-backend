@@ -4,11 +4,9 @@
   "description": "Backend Fotosgram",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "postinstall": "tsc",
-    "watch-node": "nodemon dist/index.js",
-    "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "start": "node build/index.js",
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "author": "Christian Dionisio",
   "license": "ISC",
